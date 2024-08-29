@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,53 +6,77 @@
     font-family: "Inter", sans-serif;
 }
 
-.container h4,
-h3,
-i {
-    color: white;
-}
 body {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
+    color: aliceblue;
 }
 
-:where(.container, form, input-field) {
+.container {
+    background-image: url('assets/img/fundo.png'); /* Substitua pelo caminho para sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o container */
+    background-position: center; /* Centraliza a imagem no container */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 100%; /* Garante que o container use toda a largura disponível */
+    max-width: 400px; /* Ajuste conforme necessário */
+    filter: saturate(160%);
 }
 
-form .input-field {
-    flex-direction: row;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 110px;
+    margin-bottom: 10px;
 }
 
 .title {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    margin-bottom: 15px;
 }
 
-.title i {
-    margin: 7px;
+.title h3 {
+    font-weight: 600;
+    margin-right: 5px;
 }
 
-.container {
-    background-color: #070255;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 12px;
-    row-gap: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+h4 {
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
-form input {
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.input-field {
+    display: flex;
+    gap: 12px;
+}
+
+input[type="number"] {
     height: 45px;
-    width: 42px;
-    border-radius: 20%;
-    row-gap: 10px;
+    width: 45px; /* Ajuste a largura conforme necessário */
+    border-radius: 13px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
 }
