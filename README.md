@@ -1,3 +1,6 @@
+# O projeto Token-Email 
+foi desenvolvido como um simulador de smtp, para criação de um template para envio de emails sem utilizar css avançado
+
 ## Funcionalidades
 
 - Geração de códigos de verificação únicos.
